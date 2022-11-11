@@ -1,0 +1,87 @@
+.cabecalho{
+    background: var(--azul-escuro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cabecalho__busca{
+    display: none;
+}
+
+.cabecalho__avatar{
+    display: none;
+}
+
+.cabecalho__icone{
+    color: #fff;
+    font-size: 1.3rem;
+    margin: auto 1rem;
+    transition: all .3s;
+    box-sizing: border-box;
+    padding: 0.7rem;
+    border-radius: 16px;
+    outline: none;  
+    
+}
+
+.cabecalho__icone:active{
+    background-color: rgba(var(--azul-claro), 0.16);
+    outline: none;
+    
+}
+
+@media screen and (min-width: 768px) {
+    .cabecalho__busca{
+        width: 66%;
+    }
+    .cabecalho__busca-icone{
+        display: none;
+    }
+
+    .cabecalho__busca{
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+    .cabecalho{
+        grid-area: 'cabecalho';
+        display: grid;
+        grid-template-columns: 20% 50% 20%;
+        gap: 5%;
+    }
+
+    .cabecalho__busca{
+        width: 100%;
+        grid-area: 'caixa-busca';
+    }
+    .cabecalho__icone{
+        display: none;
+    }
+    .cabecalho__avatar{
+        display: flex;
+        justify-content: end;
+        
+        grid-area: 'avatar';
+    }
+
+    .cabecalho__avatar__container{
+        display: flex;
+        align-items: center;
+        padding: .7rem;
+        gap: .4rem;
+        transition: all 0.1s;
+    }
+
+    .cabecalho__avatar__container:hover{
+        background-color: rgba(255, 255, 255, 0.08);
+        border-radius: 8px;
+    }
+    .cabecalho__avatar__nome{
+        color: #fff;
+    }
+}

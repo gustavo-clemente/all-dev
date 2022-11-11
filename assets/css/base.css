@@ -1,0 +1,104 @@
+:root {
+    --azul-escuro: #051D3B;
+    --azul-claro: 80, 129, 251;
+    --azul-celeste: 123, 164, 252;
+    --inter: 'Inter', sans-serif
+}
+
+.app {
+    background-color: var(--azul-escuro);
+    font-family: var(--inter);
+}
+
+.container {
+    padding: 0 1.2rem;
+    text-align: center;
+}
+
+.botao {
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    transition: background-color 0.1s, border 0.1s;
+    box-sizing: border-box;
+}
+
+.botao--azul-claro {
+    background-color: rgb(var(--azul-claro));
+}
+
+.botao-azul-claro:active {
+    background-color: rgb(var(--azul-celeste));
+    border: solid 4px rgba(var(--azul-claro), 0.72);
+}
+
+
+
+.botao--outline {
+    color: #fff;
+    background-color: rgba(var(--azul-claro), 0.08);
+}
+
+.botao--outline:active {
+    color: #fff;
+    background-color: rgba(var(--azul-claro), 0.16);
+}
+
+.form-field {
+    background-color: rgba(255, 255, 255, 0.16);
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    resize: none;
+    transition: all 0.3s;
+    appearance: none;
+
+}
+
+.form-field:hover {
+    background-color: rgba(255, 255, 255, 0.24);
+}
+
+.colorpicker {
+    height: 56px;
+}
+
+.titulo{
+
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.4rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+    .app{
+        display: grid;
+        grid-template-areas: 
+
+            'cabecalho'
+            'conteudo'
+        
+        ;
+        grid-template-columns: auto;
+    }
+
+    .container{
+        box-sizing: border-box;
+        grid-area: 'conteudo';
+        display: grid;
+        grid-template-columns: 20% 50% 20%;
+        gap: 5%;
+    }
+    .titulo{
+        font-size: 12px;
+    }
+}

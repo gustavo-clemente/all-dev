@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Dev | Ínicio</title>
+    <script src="https://kit.fontawesome.com/4b17d80016.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/cabecalho.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/editor.css">
+    <link rel="stylesheet" href="assets/css/projeto.css">
+</head>
+
+<body class="app">
+    <header class="cabecalho">
+        <img src="assets/img/Logo.svg" alt="Logo da All Dev" class="cabecalho__logo">
+        <input class="form-field cabecalho__busca" type="text" name="busca" id="txt_busca"
+            placeholder="Busque por algo">
+        <div class="cabecalho__avatar">
+            <div class="cabecalho__avatar__container">
+                <img class="cabecalho__avatar__foto" src="assets/img/Photo.png" alt="Foto de perfil">
+                <span class="cabecalho__avatar__nome">Harry</span>
+
+            </div>
+        </div>
+        <div class="cabecalho__container-icones">
+
+            <a href="#" class="cabecalho__icone cabecalho__busca-icone">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+
+            <a href="#" class="cabecalho__icone">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+
+    </header>
+    <main class="container">
+        <nav class="menu">
+            <h2 class="titulo">MENU</h2>
+            <a class="menu__link menu__link--active">
+                <div class="menu__link__icone">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <span class="menu__link__texto">Editor de código</span>
+            </a>
+
+            <a class="menu__link">
+                <div class="menu__link__icone">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <span class="menu__link__texto">Comunidade</span>
+            </a>
+        </nav>
+        <section class="editor">
+            <form action="#" class="editor__formulario">
+                <div class="editor__container">
+
+                    <textarea name="codigo" id="textarea_editor" class="editor__formulario__textarea" spellcheck="false">
+                    </textarea>
+               
+                </div>
+                
+                <button class="botao botao--outline">Visualizar com highlight</button>
+            </form>
+
+            
+        </section>
+        
+        <section class="projeto">
+            <div class="projeto__campos">
+                <h2 class="titulo">seu projeto</h2>
+                <input class="form-field projeto__form-field" type="text" name="nome_projeto" id="txt_nome_projeto"
+                    placeholder="Nome do seu projeto">
+                <textarea class="form-field projeto__form-field" name="descricao_projeto"
+                    id="textarea_descricao_projeto" placeholder="Descrição do seu projeto"></textarea>
+            </div>
+            <div class="projeto__campos">
+                <h2 class="titulo">personalização</h2>
+                <div class="projeto__campos-personalizacao">
+                    <select class="form-field projeto__form-field" name="linguagem" id="select_linguagem">
+                        <option value="css">CSS</option>
+                        <option value="html">HTML</option>
+                        <option value="javascript">Javascript</option>
+                    </select>
+                    <input class="form-field projeto__form-field colorpicker" type="color" name="cor" id="colorpicker_cor_projeto">
+                </div>
+
+            </div>
+
+            <button class="botao botao--azul-claro botao--salvar" id="btn_salvar_projeto">Salvar projeto</button>
+        </section>
+    </main>
+</body>
+
+</html>
