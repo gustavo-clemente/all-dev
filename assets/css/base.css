@@ -14,17 +14,7 @@
 .container {
     padding: 0 1.2rem;
     text-align: center;
-}
-
-.code-box{
     box-sizing: border-box;
-    padding: 3rem 1rem;
-    width: 100%;
-    height: 100%;
-    background: url('../img/mac_buttons.svg') no-repeat #000 1rem 1rem ;
-    color: #fff;
-    resize: none;
-    text-align: left;
 }
 
 .botao {
@@ -107,23 +97,44 @@
     display: inline-block;
 }
 
+.code-box{
+    box-sizing: border-box;
+    padding: 3rem 1rem;
+    width: 100%;
+    height: 100%;
+    background: url('../img/mac_buttons.svg') no-repeat #000 1rem 1rem ;
+    background-color: #000;
+    color: #fff;
+    resize: none;
+    text-align: left;
+    border-radius: 8px;
+}
+
+
+.code-box__content {
+    display: block;
+    white-space: pre-wrap;
+    overflow: auto;
+    height: 100%;
+}
+
+.code-box__content:focus{
+    border: none;
+    outline: none;
+}
+
 @media screen and (min-width: 1024px) {
-    .app {
-        display: grid;
-        grid-template-areas:
-
-            'cabecalho'
-            'conteudo'
-
-        ;
-        grid-template-columns: auto;
-    }
-
-    .container {
-        box-sizing: border-box;
-        grid-area: 'conteudo';
+    .container-tres-colunas {
+        
         display: grid;
         grid-template-columns: 20% 50% 20%;
+        gap: 5%;
+    }
+
+    .container-duas-colunas {
+        
+        display: grid;
+        grid-template-columns: 20% 70%;
         gap: 5%;
     }
 

@@ -42,7 +42,7 @@
         </div>
 
     </header>
-    <main class="container">
+    <main class="container container-tres-colunas">
         <nav class="menu">
             <h2 class="titulo">MENU</h2>
             <a href="index.html" class="menu__link menu__link--active">
@@ -59,19 +59,16 @@
                 <span class="menu__link__texto">Comunidade</span>
             </a>
         </nav>
+        
         <section class="editor">
-            <form action="#" class="editor__formulario">
+            
                 <div class="editor__container">
 
-                    <textarea name="codigo" id="textarea_editor" class="code-box" spellcheck="false">
-                    </textarea>
+                    <pre class="code-box"><code class="code-box__content" contenteditable="true"></code></pre>      
                
                 </div>
                 
                 <button class="botao botao--outline">Visualizar com highlight</button>
-            </form>
-
-            
         </section>
         
         <section class="projeto">
@@ -98,6 +95,8 @@
             <button class="botao botao--azul-claro botao--salvar" id="btn_salvar_projeto">Salvar projeto</button>
         </section>
     </main>
+
+    <script src="assets/js/editor-codigo.js"></script>
 </body>
 
 </html>
