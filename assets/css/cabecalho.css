@@ -27,10 +27,13 @@
     
 }
 
+.cabecalho__icone:hover{
+    background-color: rgba(var(--azul-claro), 0.08); 
+}
+
 .cabecalho__icone:active{
     background-color: rgba(var(--azul-claro), 0.16);
-    outline: none;
-    
+    outline: none;   
 }
 
 @media screen and (min-width: 768px) {

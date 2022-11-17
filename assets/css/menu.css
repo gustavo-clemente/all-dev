@@ -8,14 +8,16 @@
     display: flex;
     align-items: center;
     margin-bottom: .5rem;
+    cursor: pointer;
+    text-decoration: none;
     
 }
 
-.menu__link:hover .menu__link__icone {
+.menu__link:hover:not(.menu__link--active) .menu__link__icone {
     background-color: rgba(var(--azul-claro), 0.64);
 }
 
-.menu__link:hover .menu__link__texto {
+.menu__link:hover:not(.menu__link--active) .menu__link__texto {
     color: rgba(255, 255, 255, 0.72)
 }
 

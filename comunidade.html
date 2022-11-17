@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Dev | Ínicio</title>
+    <title>All Dev | Comunidade</title>
     <script src="https://kit.fontawesome.com/4b17d80016.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/cabecalho.css">
     <link rel="stylesheet" href="assets/css/menu.css">
-    <link rel="stylesheet" href="assets/css/editor.css">
-    <link rel="stylesheet" href="assets/css/projeto.css">
+    <link rel="stylesheet" href="assets/css/projetos.css">
+
 </head>
 
 <body class="app">
@@ -59,43 +59,35 @@
                 <span class="menu__link__texto">Comunidade</span>
             </a>
         </nav>
-        <section class="editor">
-            <form action="#" class="editor__formulario">
-                <div class="editor__container">
-
-                    <textarea name="codigo" id="textarea_editor" class="code-box" spellcheck="false">
-                    </textarea>
-               
+        <section class="projetos">
+            <div class="projetos__card">
+                <div class="projetos__card__code">
+                    <pre class="code-box"><code>teste</code></pre>
                 </div>
-                
-                <button class="botao botao--outline">Visualizar com highlight</button>
-            </form>
-
-            
-        </section>
-        
-        <section class="projeto">
-            <div class="projeto__campos">
-                <h2 class="titulo">seu projeto</h2>
-                <input class="form-field projeto__form-field" type="text" name="nome_projeto" id="txt_nome_projeto"
-                    placeholder="Nome do seu projeto">
-                <textarea class="form-field projeto__form-field" name="descricao_projeto"
-                    id="textarea_descricao_projeto" placeholder="Descrição do seu projeto"></textarea>
-            </div>
-            <div class="projeto__campos">
-                <h2 class="titulo">personalização</h2>
-                <div class="projeto__campos-personalizacao">
-                    <select class="form-field projeto__form-field" name="linguagem" id="select_linguagem">
-                        <option value="css">CSS</option>
-                        <option value="html">HTML</option>
-                        <option value="javascript">Javascript</option>
-                    </select>
-                    <input class="form-field projeto__form-field colorpicker" type="color" name="cor" id="colorpicker_cor_projeto">
+                <div class="projetos__card__content">
+                    <h3 class="projetos__card__content__titulo">Titulo do projeto</h3>
+                    <p class="projetos__card__content__descricao">Essa é a descrição do meu projeto</p>
                 </div>
+                <div class="projetos__card__footer">
+                    <div class="projetos__card__footer__actions">
+                        <a class="projetos__card__footer__actions__container">
+                            <i class="fa-solid fa-comment"></i>
+                            <span class="projetos__card__footer__actions__container__total">9</span>
+                        </a>
+                        <a class="projetos__card__footer__actions__container">
+                            <i class="fa-sharp fa-solid fa-heart"></i>
+                            <span class="projetos__card__footer__actions__container__total">9</span>
+                        </a>
+                    </div>
+                    <div class="projetos__card__footer__author">
+                        <div class="projetos__card__footer__author__container">
+                            <img class="projetos__card__footer__author__container__foto" src="assets/img/Photo.png" alt="Foto de perfil">
+                            <span class="projetos__card__footer__author__container__usuario">@Harry</span>
+                        </div>
+                    </div>
 
+                </div>
             </div>
-
-            <button class="botao botao--azul-claro botao--salvar" id="btn_salvar_projeto">Salvar projeto</button>
         </section>
     </main>
 </body>
