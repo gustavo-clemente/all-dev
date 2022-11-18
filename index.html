@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="stylesheet" href="assets/css/editor.css">
     <link rel="stylesheet" href="assets/css/projeto.css">
+    <link rel="stylesheet" href="assets/css/dracula.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css"> -->
 </head>
 
 <body class="app">
@@ -59,18 +61,15 @@
                 <span class="menu__link__texto">Comunidade</span>
             </a>
         </nav>
-        
-        <section class="editor">
-            
-                <div class="editor__container">
 
-                    <pre class="code-box"><code class="code-box__content" contenteditable="true"></code></pre>      
-               
-                </div>
-                
-                <button class="botao botao--outline">Visualizar com highlight</button>
+        <section class="editor">
+            <div class="editor__container">
+                <code id="code_block" class="code-box code-box__content" contenteditable="true" spellcheck="false" ></code>
+            </div>
+
+            <button id="btn_visualizar_highlight" class="botao botao--outline">Visualizar com highlight</button>
         </section>
-        
+
         <section class="projeto">
             <div class="projeto__campos">
                 <h2 class="titulo">seu projeto</h2>
@@ -86,8 +85,10 @@
                         <option value="css">CSS</option>
                         <option value="html">HTML</option>
                         <option value="javascript">Javascript</option>
+                        <option value="php">PHP</option>
                     </select>
-                    <input class="form-field projeto__form-field colorpicker" type="color" name="cor" id="colorpicker_cor_projeto">
+                    <input class="form-field projeto__form-field colorpicker" type="color" name="cor"
+                        id="colorpicker_cor_projeto" value="#5081FB">
                 </div>
 
             </div>
@@ -96,6 +97,7 @@
         </section>
     </main>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
     <script src="assets/js/editor-codigo.js"></script>
 </body>
 
