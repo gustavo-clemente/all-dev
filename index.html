@@ -64,7 +64,8 @@
 
         <section class="editor">
             <div class="editor__container">
-                <code id="code_block" class="code-box code-box__content" contenteditable="true" spellcheck="false" ></code>
+                <code id="code_block" class="code-box code-box__content" contenteditable="true"
+                    spellcheck="false"></code>
             </div>
 
             <button id="btn_visualizar_highlight" class="botao botao--outline">Visualizar com highlight</button>
@@ -81,12 +82,16 @@
             <div class="projeto__campos">
                 <h2 class="titulo">personalização</h2>
                 <div class="projeto__campos-personalizacao">
-                    <select class="form-field projeto__form-field" name="linguagem" id="select_linguagem">
-                        <option value="css">CSS</option>
-                        <option value="html">HTML</option>
-                        <option value="javascript">Javascript</option>
-                        <option value="php">PHP</option>
-                    </select>
+                    <div class="form-select projeto__form-field">
+                        <select name="linguagem" id="select_linguagem">
+                            <option value="css">CSS</option>
+                            <option value="html">HTML</option>
+                            <option value="javascript">Javascript</option>
+                            <option value="php">PHP</option>
+                        </select>
+                        <span class="focus"></span>
+                    </div>
+
                     <input class="form-field projeto__form-field colorpicker" type="color" name="cor"
                         id="colorpicker_cor_projeto" value="#5081FB">
                 </div>
