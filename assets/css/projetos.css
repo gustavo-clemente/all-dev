@@ -7,6 +7,12 @@
     background: rgba(0, 0, 0, 0.16);
     border-radius: 8px;
     margin-bottom: 2rem;
+    transition: all .5s;
+
+}
+
+.projetos__card:hover {
+    opacity: .5;
 
 }
 
