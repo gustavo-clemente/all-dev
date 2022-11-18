@@ -8,11 +8,13 @@
     border-radius: 8px;
     margin-bottom: 2rem;
     transition: all .5s;
+    cursor: pointer;
 
 }
 
 .projetos__card:hover {
-    opacity: .5;
+    
+    transform: translateY(-30px);
 
 }
 
@@ -50,7 +52,7 @@
 .projetos__card__footer__actions,
 .projetos__card__footer__author__container {
     display: flex;
-    gap: .6rem;
+    gap: .2rem;
     align-items: center;
 }
 
@@ -59,6 +61,25 @@
     color: #fff;
     font-weight: 400;
     font-size: 16px;
+}
+
+.projetos__card__footer__actions__container{
+    padding: 14px;
+    border-radius: 16px;
+    transition: .3s;
+}
+
+.projetos__card__footer__actions__container:hover{
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.projetos__card__footer__actions__container:active{
+    background-color: rgba(255, 255, 255, 0.16);
+}
+
+.icon--liked{
+
+    color: #F65151;
 }
 
 @media screen and (min-width: 1024px) {
